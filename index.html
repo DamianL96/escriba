@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1>Nombre Pendiente</h1>
+        <button popovertarget="ayuda" class="como-funciona-btn">¿Cómo funciona?</button>
+
+        <ul popover id="ayuda" class="ayuda">
+            <li class="item-ayuda">Agarra lápiz y papel.</li>
+            <li class="item-ayuda">Al apretar el botón de inicio se mostrará una frase inicial con la que comenzarás tu relato, puede ser
+                ficticio o verídico, no te precoupes por eso.</li>
+            <li class="item-ayuda">Luego de cierto tiempo, se te darán nuevas palabras que deberás incluír sobre la marcha en tu relato,
+                seguramente tengas que improvisar pero ¡Esa es la idea!</li>
+            <li class="item-ayuda">Este ejercicio se trata de perder el miedo a escribir y a equivocarse, pero quien te dice quizá logres sacar
+                una buena idea para seguir explorando en el futuro!</li>
+                <span class="decorador">§</span>
+        </ul>
+
+    </div>
+    
+
+    <button id="playPauseButton" class="play">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-player-play">
+	<path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M7 4v16l13 -8l-13 -8" /></svg>
+    </button>
+
+    <p id="placeholderFraseInicio" class="frase-inicio"></p>
+    <p id="placeholderPalabra" class="palabra"></p>
+
+    <script src="script.js"></script>
+</body>
+</html>

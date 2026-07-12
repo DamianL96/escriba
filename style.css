@@ -1,0 +1,99 @@
+
+:root{
+    --fondo: #f7f6f1;
+    --texto-principal: #262420;
+    --separadores: #c9bfa0;
+    --acento: #8c5a3f;
+}
+
+
+html{
+    background-color: var(--fondo);
+    color: var(--texto-principal);
+    
+}
+body{
+    font-family: "EB Garamond", serif;
+}
+
+h1{
+    text-align: center;
+}
+
+ul li:first-child{
+    border-left: 1px solid var(--acento);
+}
+
+li{
+    list-style: none;
+    border-left: 1px solid var(--separadores);
+    padding-left: 1rem;
+}
+button{
+    font-family: "EB Garamond", serif;
+    min-height: 3rem;
+    width: 100%;
+    margin: .75rem 0;
+    border-radius: 6px;
+    border: none;
+}
+
+.ayuda:popover-open{
+    background-color: var(--fondo);
+
+    border: none;
+    border-top: 1px solid var(--acento) ;
+    border-bottom: 1px solid var(--acento) ;
+
+    padding: 24px 32px;
+    display: flex;
+    flex-direction: column;
+}
+
+.ayuda{    
+    position: absolute;
+    margin: 0;
+    inset: auto;
+
+    top: anchor(top);
+
+    margin-top: 3.5rem;
+    margin-left: .5rem;
+    margin-right: .5rem;
+    position-anchor: --como-funciona-btn;
+
+}
+
+.decorador{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3rem;
+    opacity: 0.7;
+    text-align: center;
+}
+
+.como-funciona-btn{
+    anchor-name: --como-funciona-btn;
+
+    color: var(--texto-principal);
+    font-style: italic;
+    text-decoration: underline;
+    opacity: 0.9;
+
+}
+
+.item-ayuda{
+    margin: 8px 0;
+}
+
+
+.frase-inicio{
+    text-align: center;
+    font-style: italic;
+}
+
+.palabra{
+    margin-top: 5rem;
+    text-align: center;
+    font-size: 2rem;
+    color: var(--acento);
+}
