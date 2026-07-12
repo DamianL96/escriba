@@ -31,6 +31,8 @@ li{
 }
 button{
     font-family: "EB Garamond", serif;
+    background-color: var(--fondo);
+
     min-height: 3rem;
     width: 100%;
     margin: .75rem 0;
@@ -75,6 +77,8 @@ button{
     anchor-name: --como-funciona-btn;
 
     color: var(--texto-principal);
+    
+
     font-style: italic;
     text-decoration: underline;
     opacity: 0.9;
